@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog-post',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-post.component.scss']
 })
 export class BlogPostComponent implements OnInit {
+ @Input('post') post! :{author:String,topic:String,content:String }
 
   constructor() { }
 

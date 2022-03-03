@@ -10,7 +10,6 @@
     <textarea   [(ngModel)]="content"
     rows="5" cols="33">
     </textarea><br>
-    <input type="submit" (click)="onSave()"><br>
-    <div *ngFor="let post of posts">{{ post.author }} - {{ post.topic }}  - {{ post.content }}  </div>
+    <button (click)="onSave()">Submit</button><br>
+    
 </div>
-

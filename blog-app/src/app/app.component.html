@@ -1,16 +1,10 @@
-
-  <div class="container">
-    <label for="author">author</label> <br>
-    <input [(ngModel)]="author" type="text" id="author" > <br>
-    <label for="topic">topic</label> <br>
-    <input [(ngModel)]="topic"  id="topic" name="topic" > <br>
-
-    <label for="topic">content</label> <br>
-
-    <textarea   [(ngModel)]="content"
-    rows="5" cols="33">
-    </textarea><br>
-    <input type="submit" (click)="onSave()"><br>
-    <div *ngFor="let post of posts">{{ post.author }} - {{ post.topic }}  - {{ post.content }}  </div>
-</div>
-
+<div class="container">
+<p>blog-post works!</p>
+<app-blog-create (postCreated)="onPostCreated($event)"></app-blog-create>
+<hr>
+<h2>List of posts</h2>
+<div *ngFor="let post of posts">
+    <app-blog-post [post]="post"></app-blog-post>
+     </div>
+    </div>
+  

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output ,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-blog-create',
@@ -6,23 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-create.component.scss']
 })
 export class BlogCreateComponent implements OnInit {
-  title = 'blog-app';
   author:String="";
   topic:String="";
   content:String="";
-  posts :{author:String,topic:String,content:String }[]=[]
 
+ @Output("postCreated") postCreated =new EventEmitter<{
+    author:String,
+    topic:String,
+    content:String,
+    }>();
   constructor(){
 
   }
 
-  onSave(){
-   console.log('something has been added')
-
-  }
-
-
   ngOnInit(): void {
   }
 
+  onSave(){
+   this.postCreated.emit(
+     {
+       author:this.author,
+       topic:this.topic,
+       content:this.content
+     }
+   )
+   }
+ 
 }
