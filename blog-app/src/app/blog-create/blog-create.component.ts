@@ -22,12 +22,12 @@ export class BlogCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSave(){
+  onSave(topicParam:HTMLInputElement,contentParam:HTMLInputElement,authorParam:HTMLInputElement,){
    this.postCreated.emit(
      {
-       author:this.author,
-       topic:this.topic,
-       content:this.content
+       author:authorParam.value,
+       topic:topicParam.value,
+       content:contentParam.value
      }
    )
    }
