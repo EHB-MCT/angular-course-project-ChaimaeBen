@@ -1,0 +1,22 @@
+$font-primary:'Poppins', sans-serif;
+@font-face {
+  font-family:NeueKabel-Medium;
+  src:url('./../../assets/fonts/NeueKabel-Medium.otf') format("opentype");
+}
+@font-face {
+  font-family:NeueKabel;
+  src:url("./../../assets/fonts/NeueKabel.otf") format("opentype");
+}
+@font-face {
+  font-family:NeueKabel-Light;
+  src:url("./../../assets/fonts/NeueKabel-Light.otf") format("opentype");
+}
+$font-h1:NeueKabel-Medium;
+$font-h2:NeueKabel;
+$font-h3:NeueKabel-Light;
+
+$thin-weight:100;
+$light-weight:300;
+$regular-weight:400;
+$medium-weight:500;
+$semi-weight:600;

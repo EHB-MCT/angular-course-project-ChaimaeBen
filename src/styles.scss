@@ -1,0 +1,67 @@
+@import './app/helpers/colors';
+@import './app/helpers/fonts';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+*,
+body,
+h1,
+h2,
+h3 ,.container{
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: $font-primary;
+}
+
+button {
+  font-family: $font-primary;
+}
+p {
+  font-weight: $light-weight;
+}
+
+h1 {
+  font-family: $font-h1;
+  color: white;
+  font-weight: $regular-weight;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: $font-h2;
+  color: white;
+  font-weight: $light-weight;
+  font-size: 30px;
+
+}
+h3 {
+  font-family: $font-h3;
+  color: white;
+  font-weight: $light-weight;
+  font-size: 25px;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-primary {
+  background-color: $bg-color;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

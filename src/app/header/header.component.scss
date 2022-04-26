@@ -1,0 +1,45 @@
+@import '../helpers/_colors.scss';
+@import '../helpers/fonts';
+
+
+.main-nav{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.button{
+  margin: 2em;
+}
+
+.logo{
+  width: 12rem;
+  margin-right: 2rem;
+}
+
+.nav-links{
+  align-items: center;
+  display: flex;
+  padding: 0px;
+  li{
+    list-style: none;
+    padding:0em 1rem;
+  }
+
+}
+
+.nav-right{
+  display: flex;
+  button{  
+      margin:0em 1rem;
+      background: none;
+      border:none;
+}
+}
+.icon{color:$text-color}
+
+
