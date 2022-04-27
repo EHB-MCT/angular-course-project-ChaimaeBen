@@ -1,12 +1,7 @@
 .container{
-  max-width: 1920px;
-    margin: 0px;
-    padding: 0px;
-}
-.img-gradient {
- 
-}
+    max-width:100%;
 
+}
 
 .img-gradient::after {
   content: '';
@@ -17,4 +12,16 @@
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(5,7,10,0.85) 7%, 
   rgba(10,13,18,0.43) 28%, rgba(16,22,29,0.14) 39%, rgba(30,43,56,1) 71%, rgba(26,37,48,1) 95%, rgba(30,43,56,1) 100%);
+}
+.content{
+  position: absolute;
+  z-index: 100;
+  top:35%;
+  p{
+    color: white;
+  }
+}
+.title-movie{
+  display: flex;
+  align-items: flex-end;
 }
