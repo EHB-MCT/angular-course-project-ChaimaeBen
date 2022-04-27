@@ -1,12 +1,13 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-mainButton',
-  templateUrl: './mainButton.component.html',
-  styleUrls: ['./mainButton.component.scss']
+  selector: 'app-playButton',
+  templateUrl: './playButton.component.html',
+  styleUrls: ['./playButton.component.scss']
 })
-export class MainButtonComponent implements OnInit {
-  
+export class PlayButtonComponent implements OnInit {
+
+    
   @Input() label!:string;
   @Output() onClick = new EventEmitter<any>();
 

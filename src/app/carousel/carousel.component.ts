@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   images = [
-  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651014262/GoPlay/wallpaperWitcher1920x1080_cropped_vwno3t.jpg', 
-  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651014262/GoPlay/wallpaperWitcher1920x1080_cropped_vwno3t.jpg',
-  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651014262/GoPlay/wallpaperWitcher1920x1080_cropped_vwno3t.jpg',
+  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651088770/GoPlay/wallpaperWitcher1920x1080_cropped_feukiu.jpg', 
+  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651088770/GoPlay/wallpaperWitcher1920x1080_cropped_feukiu.jpg',
+  'https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651088770/GoPlay/wallpaperWitcher1920x1080_cropped_feukiu.jpg',
 ];
 
   constructor() { }

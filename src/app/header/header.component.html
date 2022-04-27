@@ -1,14 +1,18 @@
+      <header>
       <nav class="main-nav">
-<ul class="nav-links">
-  <span><img class="logo" src="https://res.cloudinary.com/dmj6tqnkw/image/upload/v1650982643/GoPlay/logo_k1fj50.png" /></span>
+<div class="nav-links">
+  <ul>
+  <li><img class="logo" src="https://res.cloudinary.com/dmj6tqnkw/image/upload/v1650982643/GoPlay/logo_k1fj50.png" /></li>
   <li>Movies</li>
   <li>TV shows</li>
 </ul>
+</div>
 <div class="nav-right">
   <button><i-feather name="search" class="icon"></i-feather></button>
   <div class="button">
-    <app-mainButton (onClick)="functioncall($event)" [label]="label"></app-mainButton>
+    <app-watchlistButton (onClick)="functioncall($event)" [label]="label"></app-watchlistButton>
   </div>
   <button><i-feather name="user" class="icon"></i-feather></button>
 </div>  
 </nav>
+</header>

@@ -9,24 +9,36 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MovieDataService } from './services/movieData.service';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
-import { MainButtonComponent } from './buttons/mainButton/mainButton.component';
+import { ContinueCardsComponent } from './continueCards/continueCards.component';
+import { FormsModule } from '@angular/forms';
+import { StarRatingModule } from 'angular-star-rating';
+import { PlayButtonComponent } from './buttons/playButton/playButton.component';
+import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistButton.component';
+import { AddButtonComponent } from './buttons/addButton/addButton.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
       HomeComponent,
       HeaderComponent,
       CarouselComponent,
       PopularMoviesComponent,
-      MainButtonComponent
+      ContinueCardsComponent,
+      PlayButtonComponent,
+      WatchlistButtonComponent,
+      AddButtonComponent
    ],
   imports: [
     BrowserModule,
     IconsModule,
     NgbModule,
+    StarRatingModule.forRoot(),
     HttpClientModule,
+FormsModule,
+
    ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

@@ -3,12 +3,17 @@
 
 #main-button{
   background-color: $accent-dark-green !important;
-  vertical-align: center;
   border-radius: 8px;
   background: none;
   outline: none;
   border:none;
-  background-color: $accent-dark-green;
   color: $text-color;
-padding: .5em 1em;
+  padding: .5em 1em;
+
+  span{
+    font-weight: $semi-weight !important;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-family: $font-primary;
+  }
 }
