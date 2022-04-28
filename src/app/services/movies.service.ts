@@ -22,12 +22,12 @@ getMovieByid(id: number): Observable<Movie> {
 }
 
 
-getPopularMovies(): Observable<Movie[]> {
-  return this.http.get<Movie[]>(this.baseUrl)
-  .pipe(
-    tap(_ => this.log('fetched popular movies')),
-    catchError(this.handleError<Movie[]>('getPopularMovies', []))
-  );
+getPopularMovies(): Observable<any> {
+  
+  return this.http.get(this.baseUrl).pipe(map(res => res = res))
+
+
+  
 }
 
 

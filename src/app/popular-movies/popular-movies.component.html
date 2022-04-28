@@ -1,10 +1,6 @@
 <ul class="movies">
-  <p>here are movies {{movies}}</p>
-  <p>here are movies</p>
 
   <li *ngFor="let movie of movies">
-    <p>{{movie}}</p>
       <span class="badge">{{movie.original_title}}</span> {{movie.overview}}
-
   </li>
 </ul>

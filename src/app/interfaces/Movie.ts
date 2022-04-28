@@ -1,4 +1,7 @@
 export interface Movie {
+
+
+   page:number,
    poster_path: string;
    adult: boolean;
    overview: string;
@@ -10,5 +13,6 @@ export interface Movie {
    title:string;
    popularity: number;
    vote_count: number;
+
 
 }

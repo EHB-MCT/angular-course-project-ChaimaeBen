@@ -7,7 +7,7 @@ import { MoviesService } from '../services/movies.service';
   styleUrls: ['./popular-movies.component.scss']
 })
 export class PopularMoviesComponent implements OnInit {
-  movies:any[] = [];
+  movies:Movie[] = [];
 
   constructor(  private movieService: MoviesService
     ) { }
@@ -17,8 +17,20 @@ export class PopularMoviesComponent implements OnInit {
   }
 
 
-  loadEmployees() {
-    return this.movieService.getPopularMovies().subscribe(movies => this.movies = movies);
-  }
+
+loadEmployees() {
+  return this.movieService.getPopularMovies().subscribe((data)=> {
+    data.results.forEach((element:any) => {
+      for (let key in element) {
+          console.log("key:", key, "value:", element[key]);
+        }
+        this.movies=data.results;
+
+        console.log('movie data '+this.movies)
+
+    });
+   })
+
+}
 
 }
