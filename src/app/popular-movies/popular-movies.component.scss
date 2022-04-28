@@ -1,5 +1,18 @@
 .container{
-  color:white
+  color:white;
+  margin: 0px;
+}
+
+.box-opacity{
+  background-color: red;
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  right: 0vw;
+  width: 378px;
+  height: 43%;
+  background: black;
+  background: linear-gradient(260deg, rgba(0,0,0,1) 5%, rgba(100,85,85,0) 100%);
 }
 
 .movies{
