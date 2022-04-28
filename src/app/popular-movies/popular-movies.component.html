@@ -1,6 +1,10 @@
-<ul class="movies">
+<div class="container">
+<app-animationTitle></app-animationTitle>
+  <ul class="movies">
+    <li *ngFor="let movie of movies">
+      <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
+    </li>
+  </ul>
 
-  <li *ngFor="let movie of movies">
-    <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
-  </li>
-</ul>
+</div>
+

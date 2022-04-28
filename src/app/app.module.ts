@@ -16,9 +16,10 @@ import { PlayButtonComponent } from './buttons/playButton/playButton.component';
 import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistButton.component';
 import { AddButtonComponent } from './buttons/addButton/addButton.component';
 import { IonicModule } from '@ionic/angular';
+import { AnimationTitleComponent } from './animationTitle/animationTitle.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
       HomeComponent,
       HeaderComponent,
@@ -27,7 +28,8 @@ import { IonicModule } from '@ionic/angular';
       ContinueCardsComponent,
       PlayButtonComponent,
       WatchlistButtonComponent,
-      AddButtonComponent
+      AddButtonComponent,
+      AnimationTitleComponent
    ],
   imports: [
     BrowserModule,

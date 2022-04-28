@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../interfaces/Movie';
 import { MoviesService } from '../services/movies.service';
 @Component({
@@ -8,7 +8,6 @@ import { MoviesService } from '../services/movies.service';
 })
 export class PopularMoviesComponent implements OnInit {
   movies:Movie[] = [];
-
   constructor(  private movieService: MoviesService
     ) { }
 

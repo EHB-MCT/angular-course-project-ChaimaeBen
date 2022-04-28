@@ -1,0 +1,39 @@
+.title{
+display: flex;
+align-items: center;
+transition: 0.3s;
+
+&:hover::before{
+  opacity: 0.7;
+  background-color: blue;
+}
+
+&:hover::after{
+    content:"view all";
+    font-family:poppins;
+    font-size: 15px;
+    animation: pulse 0.3s ease-in-out;
+
+    ;
+  }
+
+  #icon{
+    transition:transform 0.3s ease-out;
+  }
+  &:hover #icon{
+    transform: translate(100px, 0);
+
+  }
+
+}
+
+// animation: pulse 1s linear infinite alternate;
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
