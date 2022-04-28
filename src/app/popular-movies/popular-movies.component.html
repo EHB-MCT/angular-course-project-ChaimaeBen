@@ -1,6 +1,7 @@
 <ul class="movies">
 
   <li *ngFor="let movie of movies">
+    <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
       <span class="badge">{{movie.original_title}}</span> {{movie.overview}}
   </li>
 </ul>
