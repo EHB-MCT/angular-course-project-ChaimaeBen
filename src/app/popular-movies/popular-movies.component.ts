@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Movie } from '../interfaces/Movie';
+import { MoviesService } from '../services/movies.service';
 @Component({
   selector: 'app-popular-movies',
   templateUrl: './popular-movies.component.html',
   styleUrls: ['./popular-movies.component.scss']
 })
 export class PopularMoviesComponent implements OnInit {
-  url="https://api.themoviedb.org/3/movie/popular?api_key=b97da70d419e3afb043bb8f42815e0c2&language=en-US&page=1";
-  constructor() { }
+  movies:any[] = [];
+
+  constructor(  private movieService: MoviesService
+    ) { }
 
   ngOnInit() {
+    this.loadEmployees();
+  }
+
+
+  loadEmployees() {
+    return this.movieService.getPopularMovies().subscribe(movies => this.movies = movies);
   }
 
 }

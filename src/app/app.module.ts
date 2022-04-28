@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { IconsModule } from './icons/icons.module';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MovieDataService } from './services/movieData.service';
+import { MoviesService } from './services/movies.service';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
 import { ContinueCardsComponent } from './continueCards/continueCards.component';
 import { FormsModule } from '@angular/forms';
