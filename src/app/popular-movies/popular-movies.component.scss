@@ -1,3 +1,13 @@
 .movies{
   color: white;
+display: flex;
+li{
+  list-style: none;
+}
+  img{
+    border-radius: 18px;
+    margin:0px 1em;
+    width: 220px;   
+    height: 300px;    
+  }
 }
