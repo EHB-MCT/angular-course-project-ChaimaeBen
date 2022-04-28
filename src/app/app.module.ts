@@ -15,6 +15,7 @@ import { StarRatingModule } from 'angular-star-rating';
 import { PlayButtonComponent } from './buttons/playButton/playButton.component';
 import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistButton.component';
 import { AddButtonComponent } from './buttons/addButton/addButton.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [					
@@ -35,6 +36,8 @@ import { AddButtonComponent } from './buttons/addButton/addButton.component';
     StarRatingModule.forRoot(),
     HttpClientModule,
 FormsModule,
+IonicModule
+
 
    ],
   providers: [],
