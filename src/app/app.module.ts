@@ -18,6 +18,9 @@ import { AddButtonComponent } from './buttons/addButton/addButton.component';
 import { IonicModule } from '@ionic/angular';
 import { AnimationTitleComponent } from './animationTitle/animationTitle.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+
 @NgModule({
   declarations: [						
     AppComponent,
@@ -39,6 +42,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HttpClientModule,
 FormsModule,
 IonicModule,
+BrowserAnimationsModule,
 CarouselModule
 
 

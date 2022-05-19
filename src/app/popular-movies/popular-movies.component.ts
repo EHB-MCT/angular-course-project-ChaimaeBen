@@ -14,57 +14,31 @@ export class PopularMoviesComponent implements OnInit {
   
 
   constructor(  private movieService: MoviesService
-    ) { 
-
-
-    }
-    customOptions: OwlOptions = {
-
-      mouseDrag: true,
-      touchDrag: true,
-      autoHeight:false,
-      autoWidth:true,
-      loop:false,
-      dots:false,
-      rewind:false,
-      navSpeed: 200,
-      navText: [
-        '<img src="./assets/images/chevron-left.svg"/>',
-        '<img src="./assets/images/chevron-right.svg"/>'
-    ],      responsive:{
-        0:{
-            items: 1
-        },
-        600:{
-            items: 3
-        },
-        1000:{
-            items: 5
-        }
-    },
-      nav: true,
-      
-
-      }
-      
+    ) {  }
+     
       ngOnInit() {
     this.loadEmployees();
   }
 
 
+  customOptions: OwlOptions = {
+    mouseDrag: false,
+    loop:true,
+    dots:false,
+    navSpeed: 200,
+    navText: [
+      '<img src="./assets/images/chevron-left.svg"/>',
+      '<img src="./assets/images/chevron-right.svg"/>'
+  ], 
+    nav: true,
+    
+
+    }
 
 loadEmployees() {
   return this.movieService.getPopularMovies().subscribe((data)=> {
-    data.results.forEach((element:any) => {
-      for (let key in element) {
-          console.log("key:", key, "value:", element[key]);
-        }
         this.movies=data.results;
-
-        console.log('movie data '+this.movies)
-
     });
-   })
 
 }
 

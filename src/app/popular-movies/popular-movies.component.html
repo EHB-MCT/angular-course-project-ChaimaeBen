@@ -4,7 +4,7 @@
 <owl-carousel-o [options]="customOptions">
 
   <ng-container *ngFor="let movie of movies">
-    <ng-template carouselSlide  [id]="movie.id.toString()">
+    <ng-template carouselSlide >
         <a class="movie" href="" >
           <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
         </a>
@@ -13,7 +13,3 @@
 
 </owl-carousel-o>
 </div>
-
-
-<!-- <ng-template carouselSlide [id]="movie.id.toString()" class="item"> 
-  <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}"> -->
