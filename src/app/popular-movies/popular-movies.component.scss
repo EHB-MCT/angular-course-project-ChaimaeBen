@@ -1,30 +1,21 @@
-.container{
-  color:white;
-  margin: 0px;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css");
+
+.carousel-wrapper {
+  margin: auto;
+  position: relative;
 }
 
-.box-opacity{
-  background-color: red;
-  z-index: 2;
-  display: flex;
-  position: absolute;
-  right: 0vw;
-  width: 378px;
-  height: 43%;
-  background: black;
-  background: linear-gradient(260deg, rgba(0,0,0,1) 5%, rgba(100,85,85,0) 100%);
+.movie img{
+  border-radius: 18px;
 }
-
-.movies{
-  color: white;
-display: flex;
-li{
-  list-style: none;
-}
-  img{
-    border-radius: 18px;
-    margin:0px 1em;
-    width: 220px;   
-    height: 300px;    
-  }
-}
+// .box-opacity{
+//   background-color: red;
+//   z-index: 2;
+//   display: flex;
+//   position: absolute;
+//   right: 0vw;
+//   width: 378px;
+//   height: 43%;
+//   background: black;
+//   background: linear-gradient(260deg, rgba(0,0,0,1) 5%, rgba(100,85,85,0) 100%);
+// }

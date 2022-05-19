@@ -1,13 +1,19 @@
-<div class="container">
-<app-animationTitle></app-animationTitle>
-<div class="box-opacity"></div>
 
-  <ul class="movies">
-    <li *ngFor="let movie of movies">
-      <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
-    </li>
+<div class="carousel-wrapper">
 
-  </ul>
-
-</div>
-
+  <owl-carousel-o [options]="customOptions">
+  
+    <ng-container *ngFor="let movie of movies">
+      <ng-template carouselSlide  [id]="movie.id.toString()">
+          <a class="movie" href="" >
+            <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
+          </a>
+      </ng-template>
+    </ng-container>
+  
+  </owl-carousel-o>
+  </div>
+  
+  
+  <!-- <ng-template carouselSlide [id]="movie.id.toString()" class="item"> 
+    <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}"> -->

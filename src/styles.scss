@@ -1,5 +1,7 @@
 @import './app/helpers/colors';
 @import './app/helpers/fonts';
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css");
+
 
 html,
 body {
@@ -19,7 +21,6 @@ h3 ,.container{
 body {
   font-family: $font-primary;
 }
-
 
 p {
   font-weight: $light-weight;
@@ -61,5 +62,60 @@ a {
 }
 
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+.owl-item {
+  margin: 1em;
+max-width: 220px;   
+}
+
+// .owl-stage{
+//   width: 5040px !important;
+// }
+
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+   display: none;
+}
+
+.owl-theme .owl-nav .disabled{ opacity: 0 !important; cursor: default; }
+
+
+.owl-theme  .owl-nav {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+ width: 1512px;
+}
+
+.owl-prev {
+  left: -35px;
+}
+.owl-next {
+  right: -35px;
+}
+
+.prev-carousel:hover {
+  background-position: 0px -53px;
+}
+.next-carousel:hover {
+  background-position: -24px -53px;
+}
+
+.owl-theme .owl-prev {
+  display: flex;
+  justify-content: flex-start
+}
+.owl-theme .owl-next {
+  display: flex;
+  justify-content: flex-end
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  top: 0;
+  color: #FFF; 
+  padding: 137px 0em;
+  background-color: black !important;
+  cursor: pointer;
+  margin: 0px !important;
+}
