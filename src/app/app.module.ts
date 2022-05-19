@@ -17,7 +17,7 @@ import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistBut
 import { AddButtonComponent } from './buttons/addButton/addButton.component';
 import { IonicModule } from '@ionic/angular';
 import { AnimationTitleComponent } from './animationTitle/animationTitle.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [						
     AppComponent,
@@ -38,7 +38,8 @@ import { AnimationTitleComponent } from './animationTitle/animationTitle.compone
     StarRatingModule.forRoot(),
     HttpClientModule,
 FormsModule,
-IonicModule
+IonicModule,
+CarouselModule
 
 
    ],

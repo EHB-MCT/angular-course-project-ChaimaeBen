@@ -1,21 +1,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css");
 
-.carousel-wrapper {
-  margin: auto;
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
   position: relative;
 }
 
 .movie img{
   border-radius: 18px;
 }
-// .box-opacity{
-//   background-color: red;
-//   z-index: 2;
-//   display: flex;
-//   position: absolute;
-//   right: 0vw;
-//   width: 378px;
-//   height: 43%;
-//   background: black;
-//   background: linear-gradient(260deg, rgba(0,0,0,1) 5%, rgba(100,85,85,0) 100%);
-// }
+

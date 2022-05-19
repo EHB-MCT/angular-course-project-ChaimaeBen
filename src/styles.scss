@@ -85,37 +85,34 @@ max-width: 220px;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
- width: 1512px;
+ top: 0;
+
 }
 
-.owl-prev {
-  left: -35px;
-}
-.owl-next {
-  right: -35px;
-}
 
-.prev-carousel:hover {
-  background-position: 0px -53px;
-}
-.next-carousel:hover {
-  background-position: -24px -53px;
-}
 
 .owl-theme .owl-prev {
-  display: flex;
-  justify-content: flex-start
+
+  position: absolute;
+
 }
 .owl-theme .owl-next {
-  display: flex;
-  justify-content: flex-end
-}
+position:absolute; 
 
+  height: 60%;
+  width: 134px;
+  right: 0;
+  background: linear-gradient(260deg, rgba(0,0,0,1) 5%, rgba(100,85,85,0) 100%) !important;
+}
+.owl-theme .owl-nav {
+  position: relative;
+  margin:0 !important;
+}
 .owl-theme .owl-nav [class*=owl-] {
-  top: 0;
   color: #FFF; 
-  padding: 137px 0em;
-  background-color: black !important;
-  cursor: pointer;
+  padding: 181px 7px !important;
+  top: -369px;
+  position: absolute;
+        cursor: pointer;
   margin: 0px !important;
 }
