@@ -59,9 +59,6 @@ a {
   background-color: $bg-color;
 }
 
-
-
-.owl-theme .owl-nav .disabled{ opacity: 0 !important; cursor: default;  }
 .owl-prev, .owl-next {opacity: 0 !important;}
 
 .owl-nav .owl-prev.disabled,
@@ -71,7 +68,6 @@ a {
 
 .owl-carousel:hover{
   .owl-next {
-    opacity: 1 !important;
     right: 0;
     padding-left: 10rem !important;
     background: linear-gradient(270deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
@@ -79,11 +75,15 @@ a {
   
   .owl-prev {
     left: 0;
-    opacity: 1 !important;
     padding-right: 10rem !important;
     background: linear-gradient(90deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
   }
+
+ 
   .owl-prev,.owl-next {
+    opacity: 1 !important;
+    transition: opacity .25s ease-in-out;
+
     color: #FFF;
     padding: 143px 15px !important;
     top: -371px;
