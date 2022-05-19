@@ -6,7 +6,6 @@ import { HomeComponent } from './Home/Home.component';
 import { HeaderComponent } from './header/header.component';
 import { IconsModule } from './icons/icons.module';
 import { CarouselComponent } from './carousel/carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MoviesService } from './services/movies.service';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
 import { ContinueCardsComponent } from './continueCards/continueCards.component';
@@ -37,7 +36,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     IconsModule,
-    NgbModule,
     StarRatingModule.forRoot(),
     HttpClientModule,
 FormsModule,

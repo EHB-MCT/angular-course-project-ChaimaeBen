@@ -59,6 +59,12 @@ a {
   background-color: $bg-color;
 }
 
+
+
+.carousel-multiple{
+  height: 426px;
+
+
 .owl-prev, .owl-next {opacity: 0 !important;}
 
 .owl-nav .owl-prev.disabled,
@@ -118,9 +124,29 @@ max-width: 220px;
 
   }
 }
+}
 
 
-.carousel-wrapper{
-  height: 426px;
 
+.carousel-single{
+  .owl-theme .owl-dots {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+      margin-top: 10px;
+      top: 175px;
+      right: 25px;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 4px;
+    height: 28px;
+    margin: 5px 5px;
+    border-radius: 3px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 3px !important;
+}
 }

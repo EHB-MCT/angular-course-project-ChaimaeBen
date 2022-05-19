@@ -22,13 +22,13 @@
 .content{
   position: absolute;
   z-index: 10;
-  top:35%;
+  top:30%;
   margin:0em 4em;
 }
 .title-movie{
   display: flex;
   align-items: flex-end;
-  width: 17rem;
+  width: 19rem;
   justify-content: space-between;
 
   h1{
@@ -47,12 +47,14 @@
   font-size: 20px
 }
 
-ngb-rating {
+.stars {
   color: $accent-red;
-  font-size: 2rem;
-  position: absolute;
-  top: 5rem;
+    z-index: 2;
+    position: absolute;
+    top: 310px;    left: 64px;
+    font-size: 2rem;
 }
+
 .genres{
   display: flex;
   align-items: center;
@@ -73,18 +75,18 @@ ngb-rating {
 #thumbnail-trailer{
   z-index: 10;
   position: absolute;
-  top: 330px;
+  top: 360px;
   right: 78px;
   img{
     border-radius: 14px;
-    width: 414px;
+    width: 340px;
 
   }
 }
 
 #play-icon{
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 40%;
 
   ion-icon{
@@ -101,9 +103,9 @@ ngb-rating {
   position: absolute;
   font-size: 15px;
   font-family: poppins;
-  top: 7.5rem;
-  right: 23rem;
-  width: 10rem;
+  top: 6.5rem;
+  right: 19rem;
+  width: 10rem
 }
 #deco-trailer::after {
   content: "";
