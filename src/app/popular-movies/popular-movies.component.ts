@@ -27,10 +27,10 @@ export class PopularMoviesComponent implements OnInit {
       loop:false,
       dots:false,
       rewind:false,
-      navSpeed: 600,
+      navSpeed: 200,
       navText: [
-        'previous',
-        'next'
+        '<img src="./assets/images/chevron-left.svg"/>',
+        '<img src="./assets/images/chevron-right.svg"/>'
     ],      responsive:{
         0:{
             items: 1
