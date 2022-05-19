@@ -22,19 +22,30 @@ export class PopularMoviesComponent implements OnInit {
 
 
   customOptions: OwlOptions = {
-    mouseDrag: false,
-    loop:true,
+
+    mouseDrag: true,
+    loop:false,
     dots:false,
+    rewind:false,
     navSpeed: 200,
     navText: [
       '<img src="./assets/images/chevron-left.svg"/>',
       '<img src="./assets/images/chevron-right.svg"/>'
-  ], 
+  ],      responsive:{
+      0:{
+          items: 1
+      },
+      600:{
+          items: 3
+      },
+      1000:{
+          items: 5
+      }
+  },
     nav: true,
     
 
     }
-
 loadEmployees() {
   return this.movieService.getPopularMovies().subscribe((data)=> {
         this.movies=data.results;
