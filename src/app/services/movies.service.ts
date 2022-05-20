@@ -8,8 +8,9 @@ import {Movie} from '../interfaces/Movie'
   providedIn: 'root'
 })
 export class MoviesService {
-  private baseUrl = "https://api.themoviedb.org/3/movie/popular?api_key=b97da70d419e3afb043bb8f42815e0c2&language=en-US&page=1";
-
+  private key="b97da70d419e3afb043bb8f42815e0c2";
+  private baseUrl = "https://api.themoviedb.org/3/movie/";
+private session="2ff9a291b22a1280720507eb72742e0c9c9ec6c0";
 constructor(private http: HttpClient) { }
 
 
@@ -23,13 +24,31 @@ getMovieByid(id: number): Observable<Movie> {
 
 
 getPopularMovies(): Observable<any> {
-  
-  return this.http.get(this.baseUrl).pipe(map(res => res = res))
+    return this.http.get(this.baseUrl+`popular?api_key=${this.key}&language=en-US&page=1`).pipe(map(res => res = res))
+ }
 
-
-  
+ getUpcoming(): Observable<any> {
+   const url = this.baseUrl+`upcoming?api_key=${this.key}&language=en-US&page=1`
+  return this.http.get(url).pipe(map(res => res = res))
 }
 
+
+ getWatchLists(){
+  const url=`https://api.themoviedb.org/3/account/12281876/watchlist/movies?api_key=${this.key}&language=en-US&session_id=${this.session}&sort_by=created_at.asc&page=1`
+  return this.http.get(url).pipe(map(res => res = res))
+}
+ 
+getContinue(): Observable<any> {
+  const url=this.baseUrl+`popular?api_key=${this.key}&language=en-US&page=1`;
+  return this.http.get(url).pipe(map(res => res = res))
+}
+
+getLive():Observable<any>{
+  //Get a list of movies in theatres
+  const url=this.baseUrl+`now_playing?api_key=${this.key}&language=en-US&page=1`;
+  return this.http.get(url).pipe(map(res => res = res))
+
+}
 
 private handleError<T>(operation = 'operation', result?: T) {
   return (error: any): Observable<T> => {

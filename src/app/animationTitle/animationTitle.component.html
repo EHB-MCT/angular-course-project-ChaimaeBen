@@ -1,1 +1,1 @@
-<div class="title"><h3>Exculsively on </h3><i-feather id="icon" name="chevron-right"></i-feather></div>
+<div class="title"><img *ngIf="imgAfter !== ''" [src]="imgAfter"  class="record"/> <h3>{{title}}</h3><img [src]="imgBefore" class="logo_img" *ngIf="imgBefore !== ''"/><i-feather id="icon" name="chevron-right" ></i-feather></div>

@@ -1,28 +1,22 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Movie } from '../interfaces/Movie';
 import { MoviesService } from '../services/movies.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
+import { Movie } from '../interfaces/Movie';
 
 @Component({
-  selector: 'app-popular-movies',
-  templateUrl: './popular-movies.component.html',
-  styleUrls: ['./popular-movies.component.scss']
+  selector: 'app-movie-card-list',
+  templateUrl: './movie-card-list.component.html',
+  styleUrls: ['./movie-card-list.component.scss']
 })
-export class PopularMoviesComponent implements OnInit {
-  movies:Movie[] = [];
-  
-
-  constructor(  private movieService: MoviesService
-    ) {  }
-     
-      ngOnInit() {
-    this.loadEmployees();
-  }
+export class MovieCardListComponent implements OnInit {
+  @Input() movies:Movie[] = [];
+  @Input() title!: string;
+  @Input() imgBefore!: string;
+  @Input() imgAfter!: string;
 
 
   customOptions: OwlOptions = {
-
+    items:20,
     mouseDrag: true,
     loop:false,
     dots:false,
@@ -43,14 +37,10 @@ export class PopularMoviesComponent implements OnInit {
       }
   },
     nav: true,
-    
-
+  
     }
-loadEmployees() {
-  return this.movieService.getPopularMovies().subscribe((data)=> {
-        this.movies=data.results;
-    });
 
-}
+  ngOnInit(): void {
+  }
 
 }

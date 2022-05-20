@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-animationTitle',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animationTitle.component.scss']
 })
 export class AnimationTitleComponent implements OnInit {
+  @Input() title!:string;
+  @Input() imgBefore:string='';
+  @Input() imgAfter:string='';
+
 
   constructor() { }
 
   ngOnInit() {
-  }
+    }
 
 }

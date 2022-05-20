@@ -1,12 +1,12 @@
 .title{  
+  height: 40px;
   margin-left: 16px;
 display: flex;
 align-items: center;
 transition: 0.3s;
-color: #DFE9E9;
+color: #DFE9E9 !important;
 &:hover::before{
   opacity: 0.7;
-  background-color: blue;
 }
 
 &:hover::after{
@@ -39,4 +39,24 @@ color: #DFE9E9;
   100% {
     opacity: 1;
   }
+}
+
+
+.logo_img{
+  width: 125px;
+  margin-left: 1.5rem;
+}
+
+.record{
+  width: 1.3em;
+margin-right: 1rem;
+}
+
+.record[src=""] {
+  display:none;
+}
+
+
+.logo_img[src=""] {
+  display:none;
 }
