@@ -16,7 +16,9 @@ import { IonicModule } from '@ionic/angular';
 import { AnimationTitleComponent } from './animationTitle/animationTitle.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MovieCardListComponent } from './movie-card-list/movie-card-list.component'; 
+import { MovieCardListComponent } from './movie-card-list/movie-card-list.component';
+import { FooterComponent } from './footer/footer.component'; 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -29,18 +31,20 @@ import { MovieCardListComponent } from './movie-card-list/movie-card-list.compon
       WatchlistButtonComponent,
       AddButtonComponent,
       AnimationTitleComponent,
-      MovieCardListComponent
+      MovieCardListComponent,
+      FooterComponent,
+      
    ],
   imports: [
     BrowserModule,
     IconsModule,
     StarRatingModule.forRoot(),
     HttpClientModule,
-FormsModule,
-IonicModule,
-BrowserAnimationsModule,
-CarouselModule
-
+    FormsModule,  
+    IonicModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+    FontAwesomeModule
 
    ],
   providers: [],

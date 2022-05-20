@@ -10,7 +10,8 @@ import {Movie} from '../interfaces/Movie'
 export class MoviesService {
   private key="b97da70d419e3afb043bb8f42815e0c2";
   private baseUrl = "https://api.themoviedb.org/3/movie/";
-private session="2ff9a291b22a1280720507eb72742e0c9c9ec6c0";
+  private session="2ff9a291b22a1280720507eb72742e0c9c9ec6c0";
+
 constructor(private http: HttpClient) { }
 
 
@@ -20,6 +21,11 @@ getMovieByid(id: number): Observable<Movie> {
     tap(_ => this.log(`fetched hero id=${id}`)),
     catchError(this.handleError<Movie>(`getMovieByid id=${id}`))
   );
+}
+
+getExclusive(): Observable<any> {
+  const url=`https://api.themoviedb.org/3/discover/movie?api_key=${this.key}&language=en-US&sort_by=popularity.desc&page=1&primary_release_year=2020&with_original_language=fr|nl`
+  return this.http.get(url).pipe(map(res => res = res))
 }
 
 

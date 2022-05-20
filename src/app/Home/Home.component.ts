@@ -16,10 +16,12 @@ export class HomeComponent implements OnInit {
   popularMovies:Movie[] = [];
   upcomingMovies:Movie[] = [];
   liveMovies:Movie[] = [];
+  ExclusivelyMovies:Movie[] = [];
 
   popularTitle="Most popular movies";
   upcomingTitle="Coming up soon";
   liveTitle="LIVE on";
+  exclusiveTitle="Exclusively on";
   
   functioncall(event:any) {
     console.log('functioncall', event);
@@ -32,6 +34,8 @@ export class HomeComponent implements OnInit {
     this.loadPopular();
     this.loadUpcoming();
     this.loadLive();
+    this.loadExclusive();
+
   }
 
 
@@ -46,12 +50,16 @@ export class HomeComponent implements OnInit {
           this.upcomingMovies=data.results;
       });
   }
-
-
   
   loadLive() {
     return this.movieService.getLive().subscribe((data)=> {
           this.liveMovies=data.results;
+      });
+  }
+
+  loadExclusive() {
+    return this.movieService.getExclusive().subscribe((data)=> {
+          this.ExclusivelyMovies=data.results;
       });
   }
 
