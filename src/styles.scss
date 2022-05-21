@@ -219,7 +219,7 @@ max-width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
-margin: 0;
+margin: 15px 0px;
 width: 400px !important;
   position: relative;
   cursor: pointer;
@@ -234,15 +234,13 @@ width: 400px !important;
   }
 
   &:hover{
+    z-index: 2;
     transform: scale(1.25);
   }
 }
 
 
 .owl-item:hover .overlay {
-  // bottom: 0;
-  // height: 100%;
-  // width: 100%;
 opacity: 0;
 transition: opacity 0.5s ease-in-out;
 }
