@@ -196,7 +196,7 @@ max-width: 280px;
 
 .carousel-continue{
   .owl-stage{
-    width: 2484px !important;
+    width: 2731px  !important;
   }
   .owl-prev, .owl-next {opacity: 0 !important;}
 
@@ -204,17 +204,20 @@ max-width: 280px;
   .owl-nav .owl-next.disabled {
      display: none !important;
   }
-  height: 160px;
+  height: 140px;
   margin-bottom: 3rem;
 
 .owl-item {
+  width: 450px;
+  margin-right: 4em;
+
   img{
     object-fit: cover;
-    max-width: 490px;  
-max-height: 150px; 
+    width: 350px !important;
+    max-height: 135px;
     border-radius: 16px;
   }
-  margin-right: 1.5em;
+
 
 }
 

@@ -1,8 +1,24 @@
 
 <div class="carousel-continue">
+
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let movie of movies">
-      <ng-template carouselSlide >
+       <ng-template carouselSlide >
+ 
+        <div class="content">
+          <div class="text-content">
+
+            <div id="play-icon">
+              <ion-icon name="play" ></ion-icon>
+            </div>
+          <span class="title">{{movie.title}}</span>
+   <div class="player">
+    <div class="loading-bar">  </div>
+    <span class="time">3:45 min</span>
+  </div>
+   </div>
+     
+        </div>
           <a class="movie" href="" >
             <img src="https://image.tmdb.org/t/p/w500/{{movie.backdrop_path}}">
           </a>

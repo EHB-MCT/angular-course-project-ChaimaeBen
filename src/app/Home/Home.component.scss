@@ -32,8 +32,8 @@
 }
 .title-movie{
   display: flex;
-  align-items: flex-end;
-  width: 19rem;
+  align-items: center;
+  width: 18rem;
   justify-content: space-between;
 
   h1{
@@ -49,8 +49,8 @@
   margin-right: .5rem;
 }
 #year{
-  font-size: 20px
-}
+  font-size: 20px;
+  margin-top: 19px;}
 
 .stars {
   color: $accent-red;
