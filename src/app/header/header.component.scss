@@ -25,6 +25,7 @@ header{
 
 .logo{
   width: 10rem;
+  cursor: pointer;
 }
 
 .nav-links ul{
@@ -33,6 +34,8 @@ header{
   padding: 0px;
   margin:0px;
   li{
+    cursor: pointer;
+
     list-style: none;
     margin-right: 4rem;
     &:hover{

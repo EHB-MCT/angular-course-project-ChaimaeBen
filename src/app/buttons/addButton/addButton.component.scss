@@ -1,3 +1,8 @@
+@import './../../helpers/_colors.scss';
+@import './../../helpers/_fonts.scss';
+
+
+
 #add-button{
   display: flex;
   align-items: center;
@@ -9,4 +14,18 @@
   color: white;
   text-align:center;
   padding: .5em .8em;
+
+  & > .show, &:hover > .hidden {
+      display: none;
+  }
+  
+  &:hover > .show {
+      display: inline-block;
+      color: $accent-green;
+  }
+
+  &:hover{
+    background-color: #b4c9d6 !important;
+
+  }
 }
