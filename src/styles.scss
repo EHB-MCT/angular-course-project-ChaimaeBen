@@ -153,21 +153,19 @@ max-width: 246px;
 }
 
 
-
 .carousel-promo{
-  background: linear-gradient(90deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
-
+  margin: 6rem 0rem;
   .owl-theme .owl-dots {
     display: flex;
     position: absolute;
     flex-direction: row;
-      top: 329px;
+      top: 400px;
       right: 283px;
   }
   .owl-carousel .owl-item img {
     display: block;
     width: 100%;
-    height: 375px;
+    height: 450px;
     object-fit: cover;
     object-position: center -83px;
 }

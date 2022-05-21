@@ -1,5 +1,31 @@
 <div class="carousel-promo">
+  <div class="caption">
+    <h1>THE JOKER</h1>
+    <div class="content">
+      <div id="detail-top">
+      <span id="year">2022</span>
+      <div class="categories">
+       <div>sci fi</div>
+       <div>romance</div>
+       <div>action</div>
+    </div>
+  </div>
+    <div class="stars">
+      <ion-icon name="star" class="star"></ion-icon>
+      <ion-icon name="star" class="star"></ion-icon>
+      <ion-icon name="star-half-outline" class="star"></ion-icon>
+      <ion-icon name="star-outline" class="star"></ion-icon>
+    </div>
+
+    <div class="description">
+<span>The Witcher's first season followed the lives of Geralt of Rivia (Henry Cavill), the Princess Ciri (Freya Allan), and the sorceress Yennefer of Vengerberg (Anya Chalotra), prior to the battle for Sodden Hill; jumping back and forth between various timelines and exploring formative events for each of the characters.</span>
+    </div>
+  </div>
+  </div>
+
+
   <owl-carousel-o [options]="customOptions">
+
     <ng-container *ngFor="let movie of movies">
       <ng-template carouselSlide >
           <a class="main-carousel" href="" >
@@ -9,5 +35,6 @@
     </ng-container>
   
   </owl-carousel-o>
-  </div>
+</div>
+
   

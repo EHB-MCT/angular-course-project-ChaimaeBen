@@ -56,15 +56,17 @@
   color: $accent-red;
     z-index: 2;
     position: absolute;
-    top: 310px;    left: 64px;
-    font-size: 2rem;
+    top: 94px;    font-size: 2rem;
+    .star{
+      margin-right: .5rem;
+    }
 }
 
 .genres{
   display: flex;
   align-items: center;
   font-size: 15px;
- color: #969696;
+ color: $line-color;
  font-family:$font-primary;
  margin-top: 2rem;
 }
@@ -72,7 +74,7 @@
 .vertical_line{
   height: 15px;
   width: 2px;
-  background-color: #969696;
+  background-color: $line-color;
   border-radius: 99px;
   margin: 0 15px;
 }
@@ -80,8 +82,8 @@
 #thumbnail-trailer{
   z-index: 10;
   position: absolute;
-  top: 360px;
-  right: 78px;
+  top: 140px;
+  left: 1130px;
   img{
     border-radius: 14px;
     width: 340px;
@@ -91,8 +93,8 @@
 
 #play-icon{
   position: absolute;
-  left: 55%;
-  top: 40%;
+  left: 45%;
+  top: 35%;
 
   ion-icon{
     font-size: 4rem;
