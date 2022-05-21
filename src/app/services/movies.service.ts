@@ -18,9 +18,16 @@ constructor(private http: HttpClient) { }
 getMovieByid(id: number): Observable<Movie> {
   const url = `${this.baseUrl}${id}?api_key=${this.key}&language=en-US`;
   return this.http.get<Movie>(url).pipe(
-    tap(_ => this.log(`fetched hero id=${id}`)),
+    tap(_ => this.log(`fetched movie id=${id}`)),
     catchError(this.handleError<Movie>(`getMovieByid id=${id}`))
   );
+}
+
+getSimilarByid(id: number): Observable<any> {
+  //Get a list of movies in theatres
+  const url=this.baseUrl+`${id}/similar?api_key=${this.key}&language=en-US&page=1`;
+  return this.http.get(url).pipe(map(res => res = res))
+
 }
 
 getExclusive(): Observable<any> {
@@ -55,6 +62,7 @@ getLive():Observable<any>{
   return this.http.get(url).pipe(map(res => res = res))
 
 }
+
 
 private handleError<T>(operation = 'operation', result?: T) {
   return (error: any): Observable<T> => {

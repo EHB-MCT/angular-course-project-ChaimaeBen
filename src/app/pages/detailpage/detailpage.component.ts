@@ -11,15 +11,22 @@ import { Location } from '@angular/common';
 })
 export class DetailpageComponent implements OnInit {
   movie!: Movie;
- label="PLAY NOW"
+  similarMovie:Movie[] = [];
+
+ label="PLAY NOW";
+ title="Those who watched The Witcher also watched";
   constructor(
     private route: ActivatedRoute,
     private moviesService: MoviesService,
-    private location: Location
+    private location: Location,
+    private movieService: MoviesService
   ) {}
+
+
 
   ngOnInit(): void {
     this.getMovie();
+    this.getSimilar();
   }
 
   getMovie(): void {
@@ -27,6 +34,16 @@ export class DetailpageComponent implements OnInit {
     this.moviesService.getMovieByid(id)
       .subscribe(movie => this.movie = movie);
   }
+
+
+  getSimilar() {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    return this.movieService.getSimilarByid(id).subscribe((data)=> {
+      this.similarMovie=data.results;
+  });
+  }
+
 
   goBack(): void {
     this.location.back();
