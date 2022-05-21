@@ -39,8 +39,8 @@ getPopularMovies(): Observable<any> {
 }
 
 
- getWatchLists(){
-  const url=`https://api.themoviedb.org/3/account/12281876/watchlist/movies?api_key=${this.key}&language=en-US&session_id=${this.session}&sort_by=created_at.asc&page=1`
+ getWatchLists(): Observable<any> {
+  const url=`https://api.themoviedb.org/3/account/12281876/watchlist/movies?api_key=${this.key}&language=en-US&session_id=${this.session}&sort_by=created_at.asc&page=1`;
   return this.http.get(url).pipe(map(res => res = res))
 }
  

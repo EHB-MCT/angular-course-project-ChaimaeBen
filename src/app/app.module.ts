@@ -20,6 +20,7 @@ import { MovieCardListComponent } from './movie-card-list/movie-card-list.compon
 import { FooterComponent } from './footer/footer.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PromotionCarouselComponent } from './promotion-carousel/promotion-carousel.component';
+import { ContinueCardsComponent } from './continue-cards/continue-cards.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { PromotionCarouselComponent } from './promotion-carousel/promotion-carou
       MovieCardListComponent,
       FooterComponent,
       PromotionCarouselComponent,
+      ContinueCardsComponent,
       
    ],
   imports: [
