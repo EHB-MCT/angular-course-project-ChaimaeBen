@@ -8,7 +8,10 @@
 </ul>
 </div>
 <div class="nav-right">
-  <button><i-feather name="search" class="icon"></i-feather></button>
+  <div class="search-box">
+    <button class="btn-search" class="icon"><i-feather name="search" class="btn-search"></i-feather></button>
+    <input type="text" class="input-search" placeholder="search a movie or series..."/>
+  </div>
   <div class="button">
     <app-watchlistButton (onClick)="functioncall($event)" [label]="label"></app-watchlistButton>
   </div>
