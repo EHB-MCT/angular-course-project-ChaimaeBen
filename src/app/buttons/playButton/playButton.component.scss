@@ -18,6 +18,12 @@
     font-family: $font-primary;
   }
 
+ &:hover{
+   background-color: $text-color !important;
+ }
+ &:hover > span{
+  color:$accent-dark-green !important;
 
+ }
 }
 

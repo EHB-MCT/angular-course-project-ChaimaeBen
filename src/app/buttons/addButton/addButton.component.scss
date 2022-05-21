@@ -15,16 +15,16 @@
   text-align:center;
   padding: .5em .8em;
 
-  & > .show, &:hover > .hidden {
+  & > .show, &:focus > .hidden {
       display: none;
   }
   
-  &:hover > .show {
+  &:focus > .show {
       display: inline-block;
-      color: $accent-green;
+      color: $accent-dark-green;
   }
 
-  &:hover{
+  &:focus{
     background-color: #b4c9d6 !important;
 
   }
