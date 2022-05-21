@@ -77,13 +77,13 @@ a {
   .owl-next {
     right: 0;
         padding-left: 10rem !important;
-    background: linear-gradient(270deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
+    background: linear-gradient(270deg, black 20%, rgba(100, 85, 45, 0) 100%) !important;
   }
   
   .owl-prev {
     left: 0;
     padding-right: 10rem !important;
-    background: linear-gradient(90deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
+    background: linear-gradient(90deg, black 20%, rgba(100, 85, 45, 0) 100%) !important;
   }
 
  
@@ -105,7 +105,7 @@ a {
 
 .owl-item {
   margin: 1em;
-max-width: 246px;   
+max-width: 280px;   
 }
 
 
