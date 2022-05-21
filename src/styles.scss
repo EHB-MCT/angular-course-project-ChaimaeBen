@@ -69,12 +69,11 @@ a {
 
 // CAROUSEL MULTIPLE
 .carousel-multiple{
-margin-bottom: 5rem !important;
+  margin-bottom: 4rem !important;
+  height: 448px;
   .owl-stage{
     width: 7564px !important; 
    }
-  height: 400px;
-  margin-bottom: 5rem;
 
 .owl-prev, .owl-next {opacity: 0 !important;}
 
