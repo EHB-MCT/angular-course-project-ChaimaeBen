@@ -15,15 +15,14 @@
   position: absolute;
   left: 0; top: 0;
   width: 100%; 
-  height: 100%;
+  height: 130%;
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(5,7,10,0.85) 7%, 
   rgba(10,13,18,0.43) 28%, rgba(16,22,29,0.14) 39%, rgba(30,43,56,1) 71%, rgba(26,37,48,1) 95%, rgba(30,43,56,1) 100%);
  }
 
  .content{
-   margin:4rem;
-   margin-top:122px
+  margin: 0rem 4rem;   
  }
 
  .main_content{
@@ -32,11 +31,10 @@
   top:30%;
   margin:0em 4em;
 }
-.page_one{
+.page-one{
   position: absolute;
   z-index: 10;
   top:30%;
-  margin:0em 4em;
 }
 .title-movie{
   display: flex;
@@ -91,8 +89,8 @@
   z-index: 10;
   position: absolute;
   top: 140px;
-  left: 1130px;
-  img{
+  left: 1039px;
+    img{
     border-radius: 14px;
     width: 340px;
 
@@ -136,5 +134,5 @@
 
 #section2{
   box-sizing: border-box;
-  padding-top: 6rem;
+  margin-top: 17rem;
 }

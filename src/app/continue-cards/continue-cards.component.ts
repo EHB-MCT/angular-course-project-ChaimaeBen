@@ -11,16 +11,15 @@ export class ContinueCardsComponent implements OnInit {
   @Input() movies:Movie[] = [];
   @Input() title!: string;
   customOptions: OwlOptions = {
-    items:20,
     mouseDrag: true,
     loop:false,
     dots:false,
-    rewind:false,
-    navSpeed: 200,
-    navText: [
+    rewind:false,    navText: [
       '<img src="./assets/images/chevron-left.svg"/>',
       '<img src="./assets/images/chevron-right.svg"/>'
-  ],      responsive:{
+  ],
+    navSpeed: 200,
+     responsive:{
       0:{
           items: 1
       },

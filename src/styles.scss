@@ -69,9 +69,12 @@ a {
 
 // CAROUSEL MULTIPLE
 .carousel-multiple{
-
-  height: 426px;
-  margin-bottom: 3rem;
+margin-bottom: 5rem !important;
+  .owl-stage{
+    width: 7564px !important; 
+   }
+  height: 400px;
+  margin-bottom: 5rem;
 
 .owl-prev, .owl-next {opacity: 0 !important;}
 
@@ -112,7 +115,7 @@ a {
 
 .owl-item {
   margin: 1em;
-max-width: 280px;   
+max-width: 250px;   
 }
 
 
@@ -197,8 +200,8 @@ max-width: 280px;
 .carousel-continue{
   z-index: 2;
   position: absolute;
-  top:680px;
-  .owl-stage{
+  top:650px;
+ .owl-stage{
     display: inline-block;
     height: 155px;
     display: flex;
