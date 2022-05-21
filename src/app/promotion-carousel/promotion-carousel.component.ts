@@ -9,7 +9,7 @@ import { Movie } from '../interfaces/Movie';
 })
 export class PromotionCarouselComponent implements OnInit {
  @Input() movies:Movie[] = [];
-
+ label = "PLAY NOW";
   customOptions: OwlOptions = {
     autoplay:true,
     mouseDrag: true,

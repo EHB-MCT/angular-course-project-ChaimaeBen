@@ -41,7 +41,13 @@ div{
   
 }
 }
-
+.buttons{
+  margin: 2rem 0rem;
+  display: flex;
+  div{
+    margin-right: .3rem;
+  }
+}
 .stars {
   margin-top: .5rem;
   margin-bottom: 1.5rem;
