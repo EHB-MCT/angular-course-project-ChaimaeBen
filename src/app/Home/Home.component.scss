@@ -87,6 +87,7 @@
 }
 
 #thumbnail-trailer{
+  opacity: 1;
   z-index: 10;
   position: absolute;
   top: 140px;
@@ -94,23 +95,28 @@
     img{
     border-radius: 14px;
     width: 340px;
+    transition: opacity .5s ease-out;
 
   }
-}
-
-#play-icon{
-  position: absolute;
-  left: 45%;
-  top: 35%;
-
-  ion-icon{
+  #play-change{
     font-size: 4rem;
     color: white;
     opacity: .6;
-  }
+
+ }
+&:hover #play-change{
+  opacity: 1 !important;
+  // transition: opacity .2s ease-out;
+
+}
+  &:hover >img{
+    opacity: .4;
+    transition: opacity .5s ease-out;
+}
 }
 
 #deco-trailer{
+  z-index: 3;
   color: white;
   border: none;
   background: none;
@@ -120,6 +126,7 @@
   top: 6.5rem;
   right: 19rem;
   width: 10rem
+
 }
 #deco-trailer::after {
   content: "";
@@ -131,6 +138,16 @@
   position: absolute;
   left: 0;
   bottom: 0px;
+
+
+}
+
+#play-icon{
+  position: absolute;
+  left: 45%;
+  top: 35%;
+
+
 }
 
 #section2{
