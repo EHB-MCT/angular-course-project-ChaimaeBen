@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Home/Home.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './pages/Home/Home.component';
+import { HeaderComponent } from './components/header/header.component';
 import { IconsModule } from './icons/icons.module';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 import { MoviesService } from './services/movies.service';
 import { FormsModule } from '@angular/forms';
 import { StarRatingModule } from 'angular-star-rating';
@@ -13,14 +13,16 @@ import { PlayButtonComponent } from './buttons/playButton/playButton.component';
 import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistButton.component';
 import { AddButtonComponent } from './buttons/addButton/addButton.component';
 import { IonicModule } from '@ionic/angular';
-import { AnimationTitleComponent } from './animationTitle/animationTitle.component';
+import { AnimationTitleComponent } from './components/animationTitle/animationTitle.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MovieCardListComponent } from './movie-card-list/movie-card-list.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { MovieCardListComponent } from './components/movie-card-list/movie-card-list.component';
+import { FooterComponent } from './components/footer/footer.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { PromotionCarouselComponent } from './promotion-carousel/promotion-carousel.component';
-import { ContinueCardsComponent } from './continue-cards/continue-cards.component';
+import { PromotionCarouselComponent } from './components/promotion-carousel/promotion-carousel.component';
+import { ContinueCardsComponent } from './components/continue-cards/continue-cards.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DetailpageComponent } from './pages/detailpage/detailpage.component';
 
 
 @NgModule({
@@ -37,6 +39,7 @@ import { ContinueCardsComponent } from './continue-cards/continue-cards.componen
       FooterComponent,
       PromotionCarouselComponent,
       ContinueCardsComponent,
+      DetailpageComponent,
       
    ],
   imports: [
@@ -48,7 +51,8 @@ import { ContinueCardsComponent } from './continue-cards/continue-cards.componen
     IonicModule,
     BrowserAnimationsModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
 
    ],
   providers: [],

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Movie } from '../interfaces/Movie';
+import { Movie } from '../../interfaces/Movie';
 
 @Component({
   selector: 'app-promotion-carousel',

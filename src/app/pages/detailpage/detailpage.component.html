@@ -1,0 +1,39 @@
+<div class="container">
+  <div id="detail-image">
+    <img [(ngModel)]="movie.backdrop_path"/>
+<div>
+  <div><span>id: </span>{{movie.id}}</div>
+
+  <button type="button" (click)="goBack()">go back</button>
+
+    <h3 id="season">Season 2</h3>
+    <div class="title-movie">
+      <h1>{{movie.title}}</h1><h3 id="year">{{movie.release_date}}</h3>
+
+    </div>
+
+    <div id="button-group">
+      <div class="button_box"><app-playButton [label]="label"></app-playButton> </div>
+      <div class="button_box"><app-addButton></app-addButton></div>
+    </div>
+   
+    <div class="genres">
+      <span>sci-fi</span>
+      <div class="vertical_line"></div>
+      <span>romance</span>
+      <div class="vertical_line"></div>
+      <span>action</span>
+    </div>
+
+  <div class="stars">
+    <ion-icon name="star" class="star"></ion-icon>
+    <ion-icon name="star" class="star"></ion-icon>
+    <ion-icon name="star-half-outline" class="star"></ion-icon>
+    <ion-icon name="star-outline" class="star"></ion-icon>
+  </div>
+</div>
+
+
+  </div>
+
+</div>

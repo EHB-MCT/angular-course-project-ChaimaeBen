@@ -1,31 +1,25 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MoviesService } from '../services/movies.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Movie } from '../interfaces/Movie';
+import { Movie } from '../../interfaces/Movie';
 
 @Component({
-  selector: 'app-movie-card-list',
-  templateUrl: './movie-card-list.component.html',
-  styleUrls: ['./movie-card-list.component.scss']
+  selector: 'app-continue-cards',
+  templateUrl: './continue-cards.component.html',
+  styleUrls: ['./continue-cards.component.scss']
 })
-export class MovieCardListComponent implements OnInit {
+export class ContinueCardsComponent implements OnInit {
   @Input() movies:Movie[] = [];
   @Input() title!: string;
-  @Input() imgBefore!: string;
-  @Input() imgAfter!: string;
-
-
   customOptions: OwlOptions = {
-    items:20,
     mouseDrag: true,
     loop:false,
     dots:false,
-    rewind:false,
-    navSpeed: 200,
-    navText: [
+    rewind:false,    navText: [
       '<img src="./assets/images/chevron-left.svg"/>',
       '<img src="./assets/images/chevron-right.svg"/>'
-  ],      responsive:{
+  ],
+    navSpeed: 200,
+     responsive:{
       0:{
           items: 1
       },
@@ -39,6 +33,8 @@ export class MovieCardListComponent implements OnInit {
     nav: true,
   
     }
+
+  constructor() { }
 
   ngOnInit(): void {
   }

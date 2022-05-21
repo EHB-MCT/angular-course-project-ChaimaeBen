@@ -16,7 +16,7 @@ constructor(private http: HttpClient) { }
 
 
 getMovieByid(id: number): Observable<Movie> {
-  const url = `${this.baseUrl}/${id}`;
+  const url = `${this.baseUrl}${id}?api_key=${this.key}&language=en-US`;
   return this.http.get<Movie>(url).pipe(
     tap(_ => this.log(`fetched hero id=${id}`)),
     catchError(this.handleError<Movie>(`getMovieByid id=${id}`))
