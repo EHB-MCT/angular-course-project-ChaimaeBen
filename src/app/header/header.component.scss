@@ -65,13 +65,14 @@ header{
   width: 50px;
   border-style: none;
   padding: 28px;
+  top: 19px;
   font-size: 15px;
   font-family: $font-primary;
   outline: none;
   right: -14px;
   background: transparent;
   transition: all .5s ease-in-out;
-  padding-right: 25px;
+  padding-right: 28px;
 }
 .input-search::placeholder{
   color:$text-color;
@@ -84,6 +85,7 @@ header{
   width: 30px;
   height: 30px;
   border-style: none;
+  top: 34px;
   font-size: 15px;
   cursor: pointer;
   position: absolute;
