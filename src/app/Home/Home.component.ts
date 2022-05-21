@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   upcomingMovies:Movie[] = [];
   liveMovies:Movie[] = [];
   ExclusivelyMovies:Movie[] = [];
+  trendMovies:Movie[] = [];
 
   popularTitle="Most popular movies";
   upcomingTitle="Coming up soon";
@@ -35,7 +36,7 @@ export class HomeComponent implements OnInit {
     this.loadUpcoming();
     this.loadLive();
     this.loadExclusive();
-
+    this.loadTrends();
   }
 
 
@@ -63,5 +64,11 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  
+  loadTrends() {
+    return this.movieService.getTrending().subscribe((data)=> {
+          this.trendMovies=data.results;
+      });
+  }
 
 }

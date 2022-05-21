@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MovieCardListComponent } from './movie-card-list/movie-card-list.component';
 import { FooterComponent } from './footer/footer.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PromotionCarouselComponent } from './promotion-carousel/promotion-carousel.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
       AnimationTitleComponent,
       MovieCardListComponent,
       FooterComponent,
+      PromotionCarouselComponent,
       
    ],
   imports: [

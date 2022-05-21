@@ -13,6 +13,5 @@ export interface Movie {
    title:string;
    popularity: number;
    vote_count: number;
-
-
+   backdrop_path:string;
 }

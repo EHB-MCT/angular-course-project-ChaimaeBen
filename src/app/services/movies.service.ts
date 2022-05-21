@@ -24,7 +24,7 @@ getMovieByid(id: number): Observable<Movie> {
 }
 
 getExclusive(): Observable<any> {
-  const url=`https://api.themoviedb.org/3/discover/movie?api_key=${this.key}&language=en-US&sort_by=popularity.desc&page=1&primary_release_year=2020&with_original_language=fr|nl`
+  const url=`https://api.themoviedb.org/3/discover/movie?api_key=${this.key}&language=en-US&sort_by=popularity.desc&page=2&primary_release_year=2020&with_original_language=fr|nl`
   return this.http.get(url).pipe(map(res => res = res))
 }
 
@@ -44,8 +44,8 @@ getPopularMovies(): Observable<any> {
   return this.http.get(url).pipe(map(res => res = res))
 }
  
-getContinue(): Observable<any> {
-  const url=this.baseUrl+`popular?api_key=${this.key}&language=en-US&page=1`;
+getTrending(): Observable<any> {
+  const url=`https://api.themoviedb.org/3/trending/all/week?api_key=${this.key}`;
   return this.http.get(url).pipe(map(res => res = res))
 }
 

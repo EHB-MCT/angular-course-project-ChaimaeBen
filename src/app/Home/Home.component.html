@@ -4,7 +4,8 @@
   <app-carousel></app-carousel>
 
 <div class="img-gradient">
-  <div  class="content">
+  <div class="content">
+  <div class="main_content">
     <h3 id="season">Season 2</h3>
     <div class="title-movie">
       <h1>The Witcher</h1><h3 id="year">2018</h3>
@@ -24,7 +25,6 @@
       <span>action</span>
     </div>
 
-  </div>
   <div class="stars">
     <ion-icon name="star"></ion-icon>
     <ion-icon name="star"></ion-icon>
@@ -41,17 +41,17 @@
 
     <img src="https://res.cloudinary.com/dmj6tqnkw/image/upload/v1651102114/GoPlay/thumbnail2_ikzm8t.jpg" alt="thumbnail video">
   </div>
-
 </div>
-<div >
+<div>
   <app-movie-card-list [movies]="popularMovies" [title]="popularTitle"></app-movie-card-list>
   <app-movie-card-list [movies]="upcomingMovies" [title]="upcomingTitle"></app-movie-card-list>
   <app-movie-card-list [movies]="liveMovies" [title]="liveTitle" [imgBefore]="imgBefore" [imgAfter]="imgAfter"></app-movie-card-list>
-  <app-movie-card-list [movies]="ExclusivelyMovies"  [title]="exclusiveTitle" [imgBefore]="imgBefore"></app-movie-card-list>
+</div>
+<div>
+  <app-promotion-carousel [movies]="trendMovies"></app-promotion-carousel>
+</div>
+<app-movie-card-list [movies]="ExclusivelyMovies"  [title]="exclusiveTitle" [imgBefore]="imgBefore"></app-movie-card-list>
 
 </div>
 
-
 </div>
-
- 

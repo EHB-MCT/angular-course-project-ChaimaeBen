@@ -60,7 +60,7 @@ a {
 }
 
 
-
+// CAROUSEL MULTIPLE
 .carousel-multiple{
 
   height: 426px;
@@ -73,10 +73,10 @@ a {
    display: none !important;
 }
 
-.owl-carousel:hover{
+.owl-carousel{
   .owl-next {
     right: 0;
-    padding-left: 10rem !important;
+        padding-left: 10rem !important;
     background: linear-gradient(270deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
   }
   
@@ -90,10 +90,9 @@ a {
   .owl-prev,.owl-next {
     opacity: 1 !important;
     transition: opacity .25s ease-in-out;
-
     color: #FFF;
-    padding: 143px 15px !important;
-    top: -371px;
+    padding: 161px 16px !important;
+    top: -407px;
     margin: 0px;
     position: absolute;
     cursor: pointer;
@@ -106,7 +105,7 @@ a {
 
 .owl-item {
   margin: 1em;
-max-width: 220px;   
+max-width: 246px;   
 }
 
 
@@ -128,6 +127,7 @@ max-width: 220px;
 }
 
 
+// CAROUSEL SINGLE
 
 .carousel-single{
   .owl-theme .owl-dots {
@@ -142,6 +142,39 @@ max-width: 220px;
   .owl-theme .owl-dots .owl-dot span {
     width: 4px;
     height: 28px;
+    margin: 5px 5px;
+    border-radius: 3px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 3px !important;
+}
+}
+
+
+
+.carousel-promo{
+  background: linear-gradient(90deg, black 5%, rgba(100, 85, 45, 0) 100%) !important;
+
+  .owl-theme .owl-dots {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+      top: 329px;
+      right: 283px;
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    object-position: center -83px;
+}
+  .owl-theme .owl-dots .owl-dot span {
+
+    width: 28px;
+    height: 4px;
     margin: 5px 5px;
     border-radius: 3px;
     background: #D6D6D6;
