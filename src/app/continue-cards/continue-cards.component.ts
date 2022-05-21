@@ -9,7 +9,7 @@ import { Movie } from '../interfaces/Movie';
 })
 export class ContinueCardsComponent implements OnInit {
   @Input() movies:Movie[] = [];
-
+  @Input() title!: string;
   customOptions: OwlOptions = {
     items:20,
     mouseDrag: true,

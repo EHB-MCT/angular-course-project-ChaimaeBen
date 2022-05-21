@@ -3,10 +3,10 @@
 @import './../helpers/fonts';
 
 
-.carousel-continue::after{
-background-color: red;
-}
 
+#head-title{
+  z-index: 10;
+}
 
 .title{
  font-family: $font-small;
@@ -14,16 +14,17 @@ background-color: red;
 
 
 .content{
+  overflow: hidden;
   color: $text-color;
-
- 
+  display: flex;
+   justify-content: center;
 }
 .text-content{
   position: absolute;
-  z-index: 10;
-  width: 342px !important;
-  padding-left: 25px;
-  padding-top: 16px;
+  left: 0;
+  bottom: 1.4rem;
+  margin-left: 2rem;
+
 }
 .time{
   font-family: $font-small;
@@ -38,16 +39,14 @@ background-color: red;
   .player .loading-bar{
   height: 4px;
   border-radius: 2px;
-  width: 245px;
-
-  
+  width: 270px;
   background-color: $accent-green;
 }
 
 
 #play-icon{
   position: absolute;
-  left: 165px;
+  left: 152px;
   right: 0;
   bottom: 24px !important;  font-size: 2.2rem;
   opacity: .8;

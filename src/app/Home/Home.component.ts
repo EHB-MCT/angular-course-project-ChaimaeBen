@@ -19,7 +19,8 @@ export class HomeComponent implements OnInit {
   ExclusivelyMovies:Movie[] = [];
   trendMovies:Movie[] = [];
   watchlistMovies:Movie[] = [];
-
+  
+  continueTitle="Continue watching"
   popularTitle="Most popular movies";
   upcomingTitle="Coming up soon";
   liveTitle="LIVE on";
