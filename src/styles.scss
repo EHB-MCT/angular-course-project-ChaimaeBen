@@ -164,7 +164,8 @@ max-width: 250px;
 
 
 .carousel-promo{
-  margin: 6rem 0rem;
+  margin:7rem 0rem;
+  margin-right: 4rem;
   .owl-theme .owl-dots {
     display: flex;
     position: absolute;
@@ -199,14 +200,14 @@ max-width: 250px;
 
 .carousel-continue{
   z-index: 2;
-  position: absolute;
-  top:650px;
- .owl-stage{
-    display: inline-block;
-    height: 155px;
-    display: flex;
-    width: 2731px !important;
-  }
+  position: relative;
+//   top:650px;
+//  .owl-stage{
+//     display: inline-block;
+//     height: 155px;
+//     display: flex;
+   width: 3700px !important;
+//   }
   .owl-prev, .owl-next {opacity: 0 !important;}
 
   .owl-nav .owl-prev.disabled,
@@ -220,7 +221,7 @@ max-width: 250px;
   justify-content: center;
   align-items: center;
 margin: 0;
-width: 450px !important;
+width: 400px !important;
   position: relative;
   cursor: pointer;
 
@@ -230,7 +231,16 @@ width: 450px !important;
     max-height: 135px;
     border-radius: 16px;
   }
+
+  &::after{
+    content: ' ';
+    top:0;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+  }
 }
+
 
 
 }
