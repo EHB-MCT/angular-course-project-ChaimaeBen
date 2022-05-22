@@ -1,27 +1,16 @@
 # GoPlay
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sources
 
-## Build
+https://github.com/vitalii-andriiovskyi/ngx-owl-carousel-o  is a library to create carousels, I used it for all sliders and carousels in my website, it is fairly easy to use and very customizable.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+fortawesome and ifeather libraries I used for icons
 
-## Running unit tests
+https://codepen.io/dickyal6/pen/rNxKROO I used this code for my search animation but I changed it of course.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://codepen.io/alexpg96/pen/BaJBMdL This code I used as inspiration to create my own tab filter.
