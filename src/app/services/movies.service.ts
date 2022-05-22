@@ -24,10 +24,10 @@ getMovieByid(id: number): Observable<Movie> {
 }
 
 getShowByid(id: number): Observable<Movie> {
-  const url = `'https://api.themoviedb.org/3/tv/'${id}?api_key=${this.key}&language=en-US`;
+  const url = `https://api.themoviedb.org/3/tv/${id}?api_key=${this.key}&language=en-US`;
   return this.http.get<Movie>(url).pipe(
-    tap(_ => this.log(`fetched movie id=${id}`)),
-    catchError(this.handleError<Movie>(`getMovieByid id=${id}`))
+    tap(_ => this.log(`fetched show id=${id}`)),
+    catchError(this.handleError<Movie>(`show by  id=${id}`))
   );
 }
 
@@ -39,15 +39,22 @@ getSimilarByid(id: number): Observable<any> {
 
 }
 
+getSimilarShowByid(id: number): Observable<any> {
+  //Get a list of movies in theatres
+  const url=`https://api.themoviedb.org/3/tv/${id}/similar?api_key=${this.key}&language=en-US&page=1`;
+  return this.http.get(url).pipe(map(res => res = res))
+
+}
+
 getExclusive(): Observable<any> {
   const url=`https://api.themoviedb.org/3/discover/movie?api_key=${this.key}&language=en-US&sort_by=popularity.desc&page=2&primary_release_year=2020&with_original_language=fr|nl`
   return this.http.get(url).pipe(map(res => res = res))
 }
 
 
-getPopularMovies(): Observable<any> {
+getPopularShows(): Observable<any> {
   //POPULAR EPISODES
-    return this.http.get(`https://api.themoviedb.org/3/movie/popular?api_key=${this.key}&language=en-US&page=1`).pipe(map(res => res = res))
+    return this.http.get(`https://api.themoviedb.org/3/tv/popular?api_key=${this.key}&language=en-US&page=1`).pipe(map(res => res = res))
  }
 
  getUpcoming(): Observable<any> {

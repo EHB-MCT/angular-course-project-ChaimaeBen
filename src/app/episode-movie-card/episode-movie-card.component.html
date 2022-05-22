@@ -1,10 +1,10 @@
 
 <div class="carousel-multiple">
-  <app-animationTitle [title]="title" [imgAfter]="imgAfter" [imgBefore]="imgBefore"></app-animationTitle>
+  <app-animationTitle [title]="popularTitle"></app-animationTitle>
   <owl-carousel-o [options]="customOptions">
-    <ng-container *ngFor="let movie of movies">
+    <ng-container *ngFor="let movie of popularShows">
       <ng-template carouselSlide >
-          <a class="movie" routerLink="/detail-movie/{{movie.id}}">
+          <a class="movie" routerLink="/detail-show/{{movie.id}}">
             <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
           </a>
                     <div class="hidden-card">

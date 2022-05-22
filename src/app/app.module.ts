@@ -23,6 +23,8 @@ import { PromotionCarouselComponent } from './components/promotion-carousel/prom
 import { ContinueCardsComponent } from './components/continue-cards/continue-cards.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DetailpageComponent } from './pages/detailpage/detailpage.component';
+import { EpisodeMovieCardComponent } from './episode-movie-card/episode-movie-card.component';
+import { DetailpageShowComponent } from './pages/detailpage-show/detailpage-show.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { DetailpageComponent } from './pages/detailpage/detailpage.component';
       PromotionCarouselComponent,
       ContinueCardsComponent,
       DetailpageComponent,
+      EpisodeMovieCardComponent,
+      DetailpageShowComponent,
       
    ],
   imports: [

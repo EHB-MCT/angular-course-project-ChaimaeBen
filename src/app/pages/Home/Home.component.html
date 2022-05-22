@@ -47,8 +47,8 @@
   <div>  <app-continue-cards [movies]="watchlistMovies" [title]="continueTitle"></app-continue-cards>
   </div>
   <div id="section2">
-  <app-movie-card-list [movies]="popularMovies" [title]="popularTitle"></app-movie-card-list>
-  <app-movie-card-list [movies]="upcomingMovies" [title]="upcomingTitle"></app-movie-card-list>
+<app-episode-movie-card></app-episode-movie-card>  
+<app-movie-card-list [movies]="upcomingMovies" [title]="upcomingTitle"></app-movie-card-list>
   <app-movie-card-list [movies]="liveMovies" [title]="liveTitle" [imgBefore]="imgBefore" [imgAfter]="imgAfter"></app-movie-card-list>
   <app-promotion-carousel [movies]="trendMovies"></app-promotion-carousel>
   <app-movie-card-list [movies]="ExclusivelyMovies"  [title]="exclusiveTitle" [imgBefore]="imgBefore"></app-movie-card-list>

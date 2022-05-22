@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   imgBefore="https://res.cloudinary.com/dmj6tqnkw/image/upload/v1650982643/GoPlay/logo_k1fj50.png"
   imgAfter="https://res.cloudinary.com/dmj6tqnkw/image/upload/v1653005424/GoPlay/record_je5qa8.svg"
 
-  popularMovies:Movie[] = [];
   upcomingMovies:Movie[] = [];
   liveMovies:Movie[] = [];
   ExclusivelyMovies:Movie[] = [];
@@ -21,7 +20,6 @@ export class HomeComponent implements OnInit {
   watchlistMovies:Movie[] = [];
   
   continueTitle="Continue watching"
-  popularTitle="Most popular movies";
   upcomingTitle="Coming up soon";
   liveTitle="LIVE on";
   exclusiveTitle="Exclusively on";
@@ -34,7 +32,6 @@ export class HomeComponent implements OnInit {
  }
 
   ngOnInit() {
-    this.loadPopular();
     this.loadUpcoming();
     this.loadLive();
     this.loadExclusive();
@@ -43,11 +40,6 @@ export class HomeComponent implements OnInit {
   }
 
 
-  loadPopular() {
-    return this.movieService.getPopularMovies().subscribe((data)=> {
-          this.popularMovies=data.results;
-      });
-  }
 
   loadWatchlist() {
     return this.movieService.getWatchLists().subscribe((data)=> {

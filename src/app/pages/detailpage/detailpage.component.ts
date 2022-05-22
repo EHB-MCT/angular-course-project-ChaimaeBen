@@ -11,6 +11,8 @@ import { Location } from '@angular/common';
 })
 export class DetailpageComponent implements OnInit {
   movie!: Movie;
+  show!: Movie;
+
   similarMovie:Movie[] = [];
 
  label="PLAY NOW";
@@ -24,6 +26,8 @@ export class DetailpageComponent implements OnInit {
 
 
   ngOnInit(): void {
+ console.log('the route '+this.route)
+  
     this.getMovie();
     this.getSimilar();
   }
@@ -39,24 +43,6 @@ export class DetailpageComponent implements OnInit {
       console.log('THE ERROR '+e)
   }
   }
-  }
-
-  getShow(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-
-    if(id){
-      try{
-        this.moviesService.getShowByid(id)
-        .subscribe((movie) => {
-          console.log('THE SHOW HERE '+movie)
-          this.movie = movie
-        });
-      }catch(e){
-          console.log('THE ERROR '+e)
-      }
-  
-    }
-
   }
 
   getSimilar() {
