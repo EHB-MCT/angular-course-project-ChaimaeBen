@@ -19,7 +19,6 @@ export class DetailpageComponent implements OnInit {
     private route: ActivatedRoute,
     private moviesService: MoviesService,
     private location: Location,
-    private movieService: MoviesService
   ) {}
 
 
@@ -31,18 +30,43 @@ export class DetailpageComponent implements OnInit {
 
   getMovie(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.moviesService.getMovieByid(id)
+  
+    if(id){
+      try{
+      this.moviesService.getMovieByid(id)
       .subscribe(movie => this.movie = movie);
+    }catch(e){
+      console.log('THE ERROR '+e)
+  }
+  }
   }
 
+  getShow(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    if(id){
+      try{
+        this.moviesService.getShowByid(id)
+        .subscribe((movie) => {
+          console.log('THE SHOW HERE '+movie)
+          this.movie = movie
+        });
+      }catch(e){
+          console.log('THE ERROR '+e)
+      }
+  
+    }
+
+  }
 
   getSimilar() {
     const id = Number(this.route.snapshot.paramMap.get('id'));
 
-    return this.movieService.getSimilarByid(id).subscribe((data)=> {
+    return this.moviesService.getSimilarByid(id).subscribe((data)=> {
       this.similarMovie=data.results;
   });
   }
+
 
 
   goBack(): void {

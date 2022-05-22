@@ -23,6 +23,15 @@ getMovieByid(id: number): Observable<Movie> {
   );
 }
 
+getShowByid(id: number): Observable<Movie> {
+  const url = `'https://api.themoviedb.org/3/tv/'${id}?api_key=${this.key}&language=en-US`;
+  return this.http.get<Movie>(url).pipe(
+    tap(_ => this.log(`fetched movie id=${id}`)),
+    catchError(this.handleError<Movie>(`getMovieByid id=${id}`))
+  );
+}
+
+
 getSimilarByid(id: number): Observable<any> {
   //Get a list of movies in theatres
   const url=this.baseUrl+`${id}/similar?api_key=${this.key}&language=en-US&page=1`;
@@ -37,7 +46,8 @@ getExclusive(): Observable<any> {
 
 
 getPopularMovies(): Observable<any> {
-    return this.http.get(this.baseUrl+`popular?api_key=${this.key}&language=en-US&page=1`).pipe(map(res => res = res))
+  //POPULAR EPISODES
+    return this.http.get(`https://api.themoviedb.org/3/movie/popular?api_key=${this.key}&language=en-US&page=1`).pipe(map(res => res = res))
  }
 
  getUpcoming(): Observable<any> {
