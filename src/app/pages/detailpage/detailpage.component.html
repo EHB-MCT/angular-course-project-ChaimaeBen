@@ -34,7 +34,10 @@
       <div class="button_box"><app-playButton [label]="label"></app-playButton> </div>
       <div class="button_box"><app-addButton></app-addButton></div>
     </div>
-   
+    <div class="icon-bottom">
+    <ion-icon name="help-circle-outline"></ion-icon>
+    <ion-icon name="share-social-outline"></ion-icon>
+  </div>
   <div class="stars">
     <ion-icon name="star" class="star"></ion-icon>
     <ion-icon name="star" class="star"></ion-icon>
@@ -51,10 +54,10 @@
       </div>
       <div class="generic-info">
         <div class="column">
-          <span class="title-tab">Director</span>
-          <span  class="title-tab">Audio</span>
-          <span  class="title-tab">Country</span>
-          <span  class="title-tab">Sub-titles</span>
+          <span class="title-job">Director</span>
+          <span  class="title-job">Audio</span>
+          <span  class="title-job">Country</span>
+          <span  class="title-job">Sub-titles</span>
         </div>
         <div class="column">
           <span class="info-tab">Mike Burner</span>
@@ -68,7 +71,7 @@
     </div>
   </div>
 
-
+<div class="cast-cadre">
     <div class="cast">
       <h3>Cast</h3>
 
@@ -82,13 +85,27 @@
           <span  class="info-tab">Henry Cavill</span>
           <span  class="info-tab">Anya Chalotra</span>
           <span  class="info-tab">Freya Allan</span>
-
         </div>
-  
-
-
     </div>
     </div>
+
+    <div class="second-cast">
+      <h3>Secondary cast</h3>
+
+      <div class="generic-info">
+        <div class="column">
+          <span class="title-tab">Geralt of Rivia</span>
+          <span  class="title-tab">Yennefer of vengerberg</span>
+          <span  class="title-tab">Ciri of Cintra</span>
+        </div>
+        <div class="column">
+          <span  class="info-tab">Henry Cavill</span>
+          <span  class="info-tab">Anya Chalotra</span>
+          <span  class="info-tab">Freya Allan</span>
+        </div>
+    </div>
+    </div>
+  </div>
     <app-movie-card-list [title]="title" [movies]="similarMovie"></app-movie-card-list>
 <app-footer></app-footer>
 </div>
