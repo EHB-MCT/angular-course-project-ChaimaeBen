@@ -101,11 +101,11 @@ a {
     transition: opacity .25s ease-in-out;
     color: #FFF;
     padding: 161px 16px !important;
-    top: -407px;
+    top: -448px;
     margin: 0px;
     position: absolute;
     cursor: pointer;
-    margin: 21px 0rem !important;
+    margin: 25px 0rem !important;
   
   }
   
@@ -222,13 +222,7 @@ transition: .4s ease-in-out 0s;
 .carousel-continue{
   z-index: 2;
   position: relative;
-//   top:650px;
-//  .owl-stage{
-//     display: inline-block;
-//     height: 155px;
-//     display: flex;
    width: 3700px !important;
-//   }
   .owl-prev, .owl-next {opacity: 0 !important;}
 
   .owl-nav .owl-prev.disabled,
