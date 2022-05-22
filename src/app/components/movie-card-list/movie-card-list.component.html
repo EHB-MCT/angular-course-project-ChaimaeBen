@@ -7,6 +7,27 @@
           <a class="movie" routerLink="/detail/{{movie.id}}">
             <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
           </a>
+                    <div class="hidden-card">
+            <div id="top-buttons">
+            <div id="tag">
+              <ion-icon name="star" class="star"></ion-icon>
+              <span>6.5</span>
+            </div>
+            <app-addButton></app-addButton>
+             </div>
+            <div id="play-icon">
+              <ion-icon name="play" ></ion-icon>
+            </div>
+            <div class="gradient-bg">
+             <div>
+               <div class="category"><span>sci-fi</span><span>romance</span><span>action</span></div>
+               <div>  <span class="title-card">{{movie.title}}
+              </span></div>
+             <div>          <span class="overview-card">The Atreides arrive on Arrakis and the duke quickly moves to secure the planet from a Harkonnen attack..</span>
+             </div>
+          </div>
+          </div>
+        </div>
       </ng-template>
     </ng-container>
   
