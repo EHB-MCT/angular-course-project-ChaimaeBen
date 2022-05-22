@@ -1,12 +1,12 @@
 @import './../../helpers/colors';
 @import './../../helpers/fonts';
 
-
 .container{
   background-color: $bg-color;
   padding:0;
 
 }
+
 
 
  #top-detail{
@@ -15,8 +15,6 @@
 #detail-image{
   max-width: 100%;
   height: auto;
-
-
 img{
   width: 1550px;
   height: 690px;
@@ -204,3 +202,109 @@ span{
   margin: 4rem 0rem;
   h3{padding-bottom: 1rem;}
  }
+
+
+ #dropdown{
+   background-color: transparent;
+   border: 2px solid $accent-dark-green;
+   border-radius: 4px; 
+  color:$text-color;
+  padding: .5rem;
+  outline:0px;
+  font-weight: $semi-weight;
+
+  }
+
+  select option {
+    background-color: #010B15;
+    font-weight: $semi-weight;
+    color: $text-color;
+    border-radius: 0px !important;
+}
+
+
+#title_episodes{
+  margin-right: 4rem;
+  color: $text-color;
+  font-family: $font-h2;
+}
+
+.content_seasons{
+  display: flex;
+
+
+}
+
+.container_seasons{
+  margin-top: 2rem;
+ .all-item{
+   margin-top:3rem
+ }
+  .episode-item{
+    margin: 2rem 0rem;
+    height: 125px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    transform-origin: top left;
+    transform: scale(1);
+    transition: .4s ease-in-out 0s;
+    box-shadow: 4px 9px 10px 2px rgba(0,0,0,0.19);  }
+
+.episode-item:hover{
+  transform: scale(1.1);
+
+}
+  h4{
+    color:black;
+    margin-bottom: 1rem;
+    font-weight: $semi-weight;
+  }
+
+  .episode-text{
+    position: relative;
+    z-index: 3;
+    font-size: 12px;
+    bottom: 121px;
+    width: 701px;
+    margin-left: 24rem;
+  }
+  
+
+  .image{
+    img{
+      width: 325px !important;
+      height: 125px  !important;
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
+
+  .loading{
+    display: flex;
+    position: relative;
+    top: -11px  }
+  .loading-bar{
+    z-index: 3;
+    height: 4px;
+    border-radius: 2px;
+    width: 121px;
+    background-color: $accent-green;
+  }
+  .loading-bar-grey{
+    height: 4px;
+    border-radius: 2px;
+    width: 205px;
+    background-color: white
+  }
+  
+}
+
+.movies-similar{
+  margin-top: 7rem;
+}
+
+
+.title-top{
+  display: flex;
+    justify-content: space-between;
+}

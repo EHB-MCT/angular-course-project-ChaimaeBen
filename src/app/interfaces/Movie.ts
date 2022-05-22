@@ -16,4 +16,5 @@ export interface Movie {
    vote_count: number;
    backdrop_path:string;
    number_of_seasons:number;
+   seasons:[];
 }
