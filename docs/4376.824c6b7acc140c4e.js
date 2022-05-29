@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkGoPlay=self.webpackChunkGoPlay||[]).push([[4376],{4376:(h,l,s)=>{s.r(l),s.d(l,{ion_text:()=>c});var o=s(2361),n=s(6254),_=s(2854);const c=class{constructor(t){(0,o.r)(this,t)}render(){const t=(0,n.b)(this);return(0,o.h)(o.H,{class:(0,_.c)(this.color,{[t]:!0})},(0,o.h)("slot",null))}};c.style=":host(.ion-color){color:var(--ion-color-base)}"}}]);
