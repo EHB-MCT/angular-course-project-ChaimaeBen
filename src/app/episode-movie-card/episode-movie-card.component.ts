@@ -10,7 +10,7 @@ import { MoviesService } from '../services/movies.service';
 })
 export class EpisodeMovieCardComponent implements OnInit {
   popularShows:Movie[] = [];
-  popularTitle="Most popular movies";
+  popularTitle="Most popular shows";
  constructor( private movieService: MoviesService) { 
 }
 

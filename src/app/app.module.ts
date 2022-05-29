@@ -8,7 +8,6 @@ import { IconsModule } from './icons/icons.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MoviesService } from './services/movies.service';
 import { FormsModule } from '@angular/forms';
-import { StarRatingModule } from 'angular-star-rating';
 import { PlayButtonComponent } from './buttons/playButton/playButton.component';
 import { WatchlistButtonComponent } from './buttons/watchlistButton/watchlistButton.component';
 import { AddButtonComponent } from './buttons/addButton/addButton.component';
@@ -49,7 +48,6 @@ import { DetailpageShowComponent } from './pages/detailpage-show/detailpage-show
   imports: [
     BrowserModule,
     IconsModule,
-    StarRatingModule.forRoot(),
     HttpClientModule,
     FormsModule,  
     IonicModule,
